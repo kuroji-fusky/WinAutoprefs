@@ -36,7 +36,7 @@ namespace WinAutoprefs
             // button1
             // 
             button1.FlatStyle = FlatStyle.System;
-            button1.Location = new Point(34, 35);
+            button1.Location = new Point(25, 30);
             button1.Name = "button1";
             button1.Size = new Size(162, 30);
             button1.TabIndex = 0;
@@ -47,7 +47,7 @@ namespace WinAutoprefs
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(34, 87);
+            label1.Location = new Point(25, 82);
             label1.Name = "label1";
             label1.Size = new Size(38, 15);
             label1.TabIndex = 1;
@@ -57,7 +57,7 @@ namespace WinAutoprefs
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(437, 207);
+            ClientSize = new Size(577, 320);
             Controls.Add(label1);
             Controls.Add(button1);
             Name = "MainForm";

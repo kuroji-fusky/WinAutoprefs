@@ -21,7 +21,7 @@ namespace WinAutoprefs
         const int BCM_SHIELDICON = 0x160C;
 
         [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = false)]
-        internal static extern IntPtr SendMessage(IntPtr hWnd, int Msg, IntPtr wParam, IntPtr lParam);
+        internal static extern nint SendMessage(nint hWnd, int Msg, nint wParam, nint lParam);
 
         /// <summary>
         ///  Just adds the UAC shield from a control, it doesn't do much by itself
@@ -30,7 +30,7 @@ namespace WinAutoprefs
         internal static void AppendUACShield(Button btn)
         {
             btn.FlatStyle = FlatStyle.System;
-            SendMessage(btn.Handle, BCM_SHIELDICON, IntPtr.Zero, (IntPtr)1);
+            SendMessage(btn.Handle, BCM_SHIELDICON, nint.Zero, 1);
         }
 
         /// <summary>
